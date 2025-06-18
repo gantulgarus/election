@@ -51,9 +51,6 @@
             </div>
         </div>
 
-
-
-
         <div class="overflow-x-auto">
             <table class="w-full table-auto text-left border-collapse">
                 <thead>
