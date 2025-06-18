@@ -64,7 +64,7 @@
                     @foreach ($results as $c)
                         <tr id="row-{{ $c->id }}" class="hover:bg-gray-50 transition-colors">
                             <td class="px-4 py-2">{{ $c->name }}</td>
-                            <td class="px-4 py-2">{{ $c->organization_name }}</td>
+                            <td class="px-4 py-2">{{ $c->organization_name ?? '' }}</td>
                             <td class="px-4 py-2 font-semibold" id="votes-{{ $c->id }}">{{ $c->votes_count }}
                             </td>
                         </tr>
@@ -94,7 +94,7 @@
                     row.className = 'hover:bg-gray-50 transition-colors';
                     row.innerHTML = `
                         <td class="px-4 py-2">${c.name}</td>
-                        <td class="px-4 py-2">${c.organization_name}</td>
+                        <td class="px-4 py-2">${c.organization_name ?? ''}</td>
                         <td class="px-4 py-2 font-semibold" id="votes-${c.id}">${c.votes_count}</td>
                     `;
                     tbody.appendChild(row);
