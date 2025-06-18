@@ -20,6 +20,7 @@
                     <tr>
                         <th class="px-6 py-3 text-left text-sm font-medium text-gray-600 uppercase">Нэр</th>
                         <th class="px-6 py-3 text-left text-sm font-medium text-gray-600 uppercase">Имэйл</th>
+                        <th class="px-6 py-3 text-left text-sm font-medium text-gray-600 uppercase">Байгууллага</th>
                         <th class="px-6 py-3 text-left text-sm font-medium text-gray-600 uppercase">Төлөв</th>
                         <th class="px-6 py-3 text-left text-sm font-medium text-gray-600 uppercase">Үйлдэл</th>
                     </tr>
@@ -29,6 +30,7 @@
                         <tr>
                             <td class="px-6 py-4 whitespace-nowrap">{{ $candidate->name }}</td>
                             <td class="px-6 py-4 whitespace-nowrap">{{ $candidate->email }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">{{ $candidate->organization_name }}</td>
                             <td class="px-6 py-4 whitespace-nowrap">
                                 <span
                                     class="inline-block px-3 py-1 rounded-full text-xs font-medium

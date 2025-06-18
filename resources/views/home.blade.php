@@ -15,7 +15,7 @@
                     <div class="flex-1 p-4 flex justify-between items-center">
                         <div>
                             <div class="text-gray-900 font-semibold">{{ $c->name }}</div>
-                            <div class="text-sm text-gray-500">ajil (alba)</div>
+                            <div class="text-sm text-gray-900 font-semibold">{{ $c->organization_name ?? '' }}</div>
                         </div>
                         <div class="text-right">
                             <div class="text-2xl font-bold text-gray-800">Санал: {{ $c->votes_count }}</div>
@@ -48,7 +48,7 @@
                             <div class="flex-1 p-4 flex justify-between items-center">
                                 <div>
                                     <div class="text-gray-900 font-semibold">${c.name}</div>
-                                    <div class="text-sm text-gray-500">ajil (alba)</div>
+                                    <div class="text-sm text-gray-900 font-semibold">${c.organization_name ?? ''}</div>
                                 </div>
                                 <div class="text-right">
                                     <div class="text-2xl font-bold text-gray-800">

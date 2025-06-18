@@ -24,6 +24,16 @@
             </div>
 
             <div>
+                <label for="organization_name" class="block text-sm font-medium text-gray-700">Байгууллага</label>
+                <input type="text" name="organization_name" id="organization_name" required
+                    value="{{ old('organization_name') }}"
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                @error('organization_name')
+                    <div class="text-red-600 text-sm mt-1">{{ $message }}</div>
+                @enderror
+            </div>
+
+            <div>
                 <label for="description" class="block text-sm font-medium text-gray-700">Танилцуулга</label>
                 <textarea name="description" id="description" rows="4"
                     class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500">{{ old('description') }}</textarea>

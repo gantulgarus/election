@@ -32,7 +32,7 @@
                     {{-- Нэр, тайлбар --}}
                     <div class="flex-1 md:px-4">
                         <p class="text-lg font-semibold text-gray-800">{{ $candidate->name }}</p>
-                        <p class="text-gray-600 text-sm mt-1">{{ $candidate->description }}</p>
+                        <p class="text-gray-600 text-sm mt-1">{{ $candidate->organization_name ?? '' }}</p>
                     </div>
 
                     {{-- Санал өгөх хэсэг --}}

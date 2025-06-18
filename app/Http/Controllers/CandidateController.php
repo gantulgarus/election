@@ -23,6 +23,7 @@ class CandidateController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'nullable|email|max:255',
+            'organization_name' => 'nullable|string',
             'description' => 'nullable|string',
             'status' => 'required|in:pending,approved,rejected',
         ]);
@@ -47,6 +48,7 @@ class CandidateController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'nullable|email|max:255',
+            'organization_name' => 'nullable|string',
             'description' => 'nullable|string',
             'status' => 'required|in:pending,approved,rejected',
         ]);

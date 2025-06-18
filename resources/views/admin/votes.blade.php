@@ -56,6 +56,7 @@
                 <thead>
                     <tr class="bg-gray-100 text-gray-700 uppercase text-sm">
                         <th class="px-4 py-3 border-b">Нэр</th>
+                        <th class="px-4 py-3 border-b">Байгууллага</th>
                         <th class="px-4 py-3 border-b">Саналын тоо</th>
                     </tr>
                 </thead>
@@ -63,6 +64,7 @@
                     @foreach ($results as $c)
                         <tr id="row-{{ $c->id }}" class="hover:bg-gray-50 transition-colors">
                             <td class="px-4 py-2">{{ $c->name }}</td>
+                            <td class="px-4 py-2">{{ $c->organization_name }}</td>
                             <td class="px-4 py-2 font-semibold" id="votes-{{ $c->id }}">{{ $c->votes_count }}
                             </td>
                         </tr>
@@ -92,6 +94,7 @@
                     row.className = 'hover:bg-gray-50 transition-colors';
                     row.innerHTML = `
                         <td class="px-4 py-2">${c.name}</td>
+                        <td class="px-4 py-2">${c.organization_name}</td>
                         <td class="px-4 py-2 font-semibold" id="votes-${c.id}">${c.votes_count}</td>
                     `;
                     tbody.appendChild(row);
